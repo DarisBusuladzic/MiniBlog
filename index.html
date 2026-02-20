@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mini Blog</h1>
+
+  
+    <form id="postForm">
+        <input type="text" id="title" placeholder="Naslov" required>
+        <textarea id="content" placeholder="Sadržaj objave" required></textarea>
+        <input type="text" id="author" placeholder="Autor" required>
+        <button type="submit">Objavi</button>
+    </form>
+
+ 
+    <h2>Objave:</h2>
+    <div id="postsContainer"></div>
+
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+   
+    <script src="app.js"></script>
+</body>
+</html>
